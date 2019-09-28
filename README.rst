@@ -1,5 +1,5 @@
 =================
-python-bitcoinrpc
+python-denariusrpc
 =================
 
 AuthServiceProxy is an improved version of python-jsonrpc.
@@ -13,7 +13,7 @@ It includes the following generic improvements:
 * can optionally log all RPC calls and results
 * JSON-2.0 batch support
 
-It also includes the following bitcoin-specific details:
+It also includes the following denarius-specific details:
 
 * sends Basic HTTP authentication headers
 * parses all JSON numbers that look like floats as Decimal,
@@ -25,21 +25,17 @@ Installation
 1. change the first line of setup.py to point to the directory of your installation of python 2.*
 2. run setup.py
 
-Note: This will only install bitcoinrpc. If you also want to install jsonrpc to preserve 
-backwards compatibility, you have to replace 'bitcoinrpc' with 'jsonrpc' in setup.py and run it again.
-
-Or simply install the library using pip::
-
-    pip install python-bitcoinrpc
+Note: This will only install denariusrpc. If you also want to install jsonrpc to preserve 
+backwards compatibility, you have to replace 'denariusrpc' with 'jsonrpc' in setup.py and run it again.
 
 Example
 =======
 .. code:: python
 
-    from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
+    from denariusrpc.authproxy import AuthServiceProxy, JSONRPCException
 
-    # rpc_user and rpc_password are set in the bitcoin.conf file
-    rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:8332"%(rpc_user, rpc_password))
+    # rpc_user and rpc_password are set in the denarius.conf file
+    rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:32369"%(rpc_user, rpc_password))
     best_block_hash = rpc_connection.getbestblockhash()
     print(rpc_connection.getblock(best_block_hash))
 
@@ -54,19 +50,19 @@ Logging all RPC calls to stderr
 ===============================
 .. code:: python
 
-    from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
+    from denariusrpc.authproxy import AuthServiceProxy, JSONRPCException
     import logging
 
     logging.basicConfig()
-    logging.getLogger("BitcoinRPC").setLevel(logging.DEBUG)
+    logging.getLogger("DenariusRPC").setLevel(logging.DEBUG)
 
-    rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:8332"%(rpc_user, rpc_password))
+    rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:32369"%(rpc_user, rpc_password))
     print(rpc_connection.getinfo())
 
 Produces output on stderr like
 
-    DEBUG:BitcoinRPC:-1-> getinfo []
-    DEBUG:BitcoinRPC:<-1- {"connections": 8, ...etc }
+    DEBUG:DenariusRPC:-1-> getinfo []
+    DEBUG:DenariusRPC:<-1- {"connections": 8, ...etc }
 
 Socket timeouts under heavy load
 ================================
