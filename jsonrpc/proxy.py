@@ -1,1 +1,1 @@
-from bitcoinrpc.authproxy import AuthServiceProxy as ServiceProxy, JSONRPCException
+from denariusrpc.authproxy import AuthServiceProxy as ServiceProxy, JSONRPCException
