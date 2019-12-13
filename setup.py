@@ -3,16 +3,16 @@
 from distutils.core import setup
 
 setup(
-    name='python-denariusrpc',
+    name='python-innovarpc',
     version='1.0',
-    description='Enhanced version of python-jsonrpc for use with Denarius',
+    description='Enhanced version of python-jsonrpc for use with Innova',
     long_description=open('README.rst').read(),
-    author='buzzkillb',
-    author_email='<buzz@denarius.io>',
-    maintainer='buzzkillb',
-    maintainer_email='<jgarzik@pobox.com>',
-    url='http://www.github.com/buzzkillb/python-denariusrpc',
-    packages=['denariusrpc'],
+    author='Original - buzzkillb | Innova - CircuitBreaker88',
+    author_email='<circuitbreaker@innova.io>',
+    maintainer='circuitbreaker88',
+    maintainer_email='<circuitbreaker@innova.io>',
+    url='http://www.github.com/innova-foundation/python-innovarpc',
+    packages=['innovarpc'],
     classifiers=[
         'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)', 'Operating System :: OS Independent'
     ]

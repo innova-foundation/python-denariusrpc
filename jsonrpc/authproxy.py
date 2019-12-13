@@ -1,3 +1,3 @@
-from denariusrpc.authproxy import AuthServiceProxy, JSONRPCException
+from innovarpc.authproxy import AuthServiceProxy, JSONRPCException
 
 __all__ = ['AuthServiceProxy', 'JSONRPCException']

@@ -1,1 +1,1 @@
-from denariusrpc.authproxy import AuthServiceProxy as ServiceProxy, JSONRPCException
+from innovarpc.authproxy import AuthServiceProxy as ServiceProxy, JSONRPCException
