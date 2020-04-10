@@ -22,8 +22,9 @@ It also includes the following denarius-specific details:
 Installation
 ============
 
-1. change the first line of setup.py to point to the directory of your installation of python 2.*
-2. run setup.py
+1. git clone https://github.com/buzzkillb/python-denariusrpc  
+2. cd python-denariusrpc  
+3. python setup.py install  
 
 Note: This will only install denariusrpc. If you also want to install jsonrpc to preserve 
 backwards compatibility, you have to replace 'denariusrpc' with 'jsonrpc' in setup.py and run it again.
