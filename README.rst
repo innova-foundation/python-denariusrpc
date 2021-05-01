@@ -22,10 +22,11 @@ It also includes the following innova-specific details:
 Installation
 ============
 
-1. change the first line of setup.py to point to the directory of your installation of python 2.*
-2. run setup.py
+1. git clone https://github.com/innova-foundation/python-innovarpc
+2. cd python-innovarpc
+3. python setup.py install
 
-Note: This will only install innovarpc. If you also want to install jsonrpc to preserve 
+Note: This will only install innovarpc. If you also want to install jsonrpc to preserve
 backwards compatibility, you have to replace 'innovarpc' with 'jsonrpc' in setup.py and run it again.
 
 Example

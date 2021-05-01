@@ -13,4 +13,4 @@ print "Peers:", (get_info[u'connections'])
 print "Daemon Version:", (get_info[u'version'])
 
 get_blockchain_info = rpc_connection.getblockchaininfo()
-print "Circulating:", (get_blockchain_info[u'moneysupply']), "D"
+print "Circulating:", (get_blockchain_info[u'moneysupply']), "INN"
