@@ -8,7 +8,7 @@ setup(
     description='Enhanced version of python-jsonrpc for use with Innova',
     long_description=open('README.rst').read(),
     author='Original - buzzkillb | Innova - CircuitBreaker',
-    author_email='<development@innovacoin.io>',
+    author_email='<development@innova-foundation.com>',
     maintainer='CircuitBreaker',
     maintainer_email='<development@innovacoin.io>',
     url='http://www.github.com/innova-foundation/python-innovarpc',
