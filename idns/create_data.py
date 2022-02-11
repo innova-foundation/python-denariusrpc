@@ -1,7 +1,7 @@
-#create new Innova DDNS name based on name, value and expiration
+#create new Innova IDNS name based on name, value and expiration
 from innovarpc.authproxy import AuthServiceProxy, JSONRPCException
 
-#DDNS to create data
+#IDNS to create data
 idns_create_name = 'api:python_example'
 idns_create_value = 'example value'
 idns_create_expiration = 9999
