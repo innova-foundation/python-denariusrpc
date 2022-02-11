@@ -14,7 +14,7 @@ coingecko_data = str(json.loads(coingecko_url.text))
 print(coingecko_data)
 
 # rpc_user and rpc_password are set in the innova.conf file
-rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:32369"%("rpcusername", "rpcpassword"))
+rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:14531"%("rpcusername", "rpcpassword"))
 
 #push coingecko json into the IDNS value
 name_push = rpc_connection.name_update(idns_update_name, coingecko_data, idns_update_expiration)

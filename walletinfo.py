@@ -1,7 +1,7 @@
 from innovarpc.authproxy import AuthServiceProxy, JSONRPCException
 
 # rpc_user and rpc_password are set in the innova.conf file
-rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:32369"%("user", "password"))
+rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:14531"%("user", "password"))
 get_block_count = rpc_connection.getblockcount()
 print "Block Height:", (get_block_count)
 get_staking_info = rpc_connection.getstakinginfo()

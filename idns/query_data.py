@@ -5,7 +5,7 @@ from innovarpc.authproxy import AuthServiceProxy, JSONRPCException
 idns_lookup_data = 'api:pricefeedInnova'
 
 # rpc_user and rpc_password are set in the innova.conf file
-rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:32369"%("rpcusername", "rpcpassword"))
+rpc_connection = AuthServiceProxy("http://%s:%s@127.0.0.1:14531"%("rpcusername", "rpcpassword"))
 
 name_show_feed = rpc_connection.name_show(idns_lookup_data)
 print(name_show_feed)
