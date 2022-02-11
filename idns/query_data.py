@@ -1,4 +1,4 @@
-#requires https://github.com/buzzkillb/python-innovarpc and innova daemon/QT wallet
+#requires https://github.com/innova-foundation/python-innovarpc and innova daemon/QT wallet
 from innovarpc.authproxy import AuthServiceProxy, JSONRPCException
 
 #IDNS to look up data
